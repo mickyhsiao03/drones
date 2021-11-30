@@ -405,7 +405,7 @@ def main():     #main function, maps out a route for drone to start mission
     
     now = datetime.now()
     curTime = now.strftime("%H%M%S")
-    with open(f"C:/Users/Micky/Desktop/TelloCommands{curTime}.txt", "w") as f: #writes tello command file with time stamp. command.txt official file name
+    with open(f"C:/Command.txt", "w") as f: #writes tello command file with time stamp. command.txt official file name
         f.write('command')
         f.write('\n')
         f.write('delay 2')
@@ -419,7 +419,6 @@ def main():     #main function, maps out a route for drone to start mission
             f.write('\n')
             f.write('delay 2') #delay used to give cpu time to send and receive data
             f.write('\n')
-         
         f.write('land')
     
             
