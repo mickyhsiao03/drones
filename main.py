@@ -412,11 +412,14 @@ def main():     #main function, maps out a route for drone to start mission
         f.write('\n')
         f.write('takeoff')
         f.write('\n')
+        f.write('delay 2')
+        f.write('\n')
         for line in droneCommands:
             f.write(line)
             f.write('\n')
             f.write('delay 2') #delay used to give cpu time to send and receive data
             f.write('\n')
+         
         f.write('land')
     
             
