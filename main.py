@@ -25,160 +25,170 @@ def move_top_right():
         move()
         turn_right()
         move()
-        droneCommands.extend(("forward 20", "right 20"))
+        # droneCommands.extend(("forward 20", "right 20"))
     elif facing_east():
         move()
         turn_left()
         move()
-        droneCommands.extend(("foward 20", "left 20"))
+        # droneCommands.extend(("forward 20", "left 20"))
     elif facing_south():
         turn_left()
         move()
         turn_left()
         move()
-        droneCommands.extend(("left 20", "backward 20"))
+        # droneCommands.extend(("left 20", "back 20"))
     elif facing_west():
         turn_right()
         move()
         turn_right()
         move()
-        droneCommands.extend(("right 20", "backward 20"))
+        # droneCommands.extend(("right 20", "back 20"))
+    droneCommands.extend(("forward 20", "left 20"))
+
 def move_right():
     if facing_north():
         turn_right()
         move()
-        droneCommands.append(("right 20"))
+        # droneCommands.append(("right 20"))
     elif facing_east():
         move()   
-        droneCommands.append(("foward 20"))
+        # droneCommands.append(("forward 20"))
     elif facing_south():
         turn_left()
         move()
-        droneCommands.append(("left 20"))
+        # droneCommands.append(("left 20"))
     elif facing_west():
         turn_back()
         move()
-        droneCommands.append(("backward 20"))
+        # droneCommands.append(("back 20"))
+    droneCommands.append(("forward 20"))
 def move_bot_right():
     if facing_north():
         turn_back()
         move()
         turn_left()
         move()
-        droneCommands.extend(("backward 20", "right 20"))
+        # droneCommands.extend(("back 20", "right 20"))
     elif facing_east():
         turn_right()
         move()
         turn_left()
         move()
-        droneCommands.extend(("right 20", "forward 20"))
+        # droneCommands.extend(("right 20", "forward 20"))
     elif facing_south():
         move()
         turn_left()
         move()
-        droneCommands.extend(("foward 20", "left 20"))
+        # droneCommands.extend(("forward 20", "left 20"))
     elif facing_west():
         turn_right()
         move()
         turn_right()
         move()
-        droneCommands.extend(("left 20", "backward 20"))
+        # droneCommands.extend(("left 20", "back 20"))
+
+    droneCommands.extend(("right 20", "forward 20"))
 def move_bot():
     if facing_north():
         turn_back()
         move()
-        droneCommands.append(("backward 20"))
+        # droneCommands.append(("back 20"))
     elif facing_east():
         turn_right()
         move() 
-        droneCommands.append(("right 20"))
+        # droneCommands.append(("right 20"))
     elif facing_south():
         move()
-        droneCommands.append(("foward 20"))
+        # droneCommands.append(("forward 20"))
     elif facing_west():
         turn_left()
         move()
-        droneCommands.append(("left 20"))
+        # droneCommands.append(("left 20"))
+    droneCommands.append(("right 20"))
 def move_bot_left():
     if facing_north():
         turn_back()
         move()
         turn_right()
         move()
-        droneCommands.extend(("backward 20", "left 20"))
+        # droneCommands.extend(("back 20", "left 20"))
     elif facing_east():
         turn_right()
         move()
         turn_right()
         move()
-        droneCommands.extend(("right 20", "backward 20"))
+        # droneCommands.extend(("right 20", "back 20"))
     elif facing_south():
         move()
         turn_right()
         move()
-        droneCommands.extend(("foward 20", "right 20"))
+        # droneCommands.extend(("forward 20", "right 20"))
     elif facing_west():
         turn_left()
         move()
         turn_right()
         move()
-        droneCommands.extend(("left 20", "forward 20"))
+        # droneCommands.extend(("left 20", "forward 20"))
+    droneCommands.extend(("right 20", "back 20"))
 def move_left():
     if facing_north():
         turn_left()
         move()
-        droneCommands.append(("left 20"))
+        # droneCommands.append(("left 20"))
     elif facing_east():
         turn_back()
         move() 
-        droneCommands.append(("backward 20"))
+        # droneCommands.append(("back 20"))
     elif facing_south():
         turn_right()
         move()
-        droneCommands.append(("right 20"))
+        # droneCommands.append(("right 20"))
     elif facing_west():
         move()
-        droneCommands.append(("foward 20"))
+        # droneCommands.append(("forward 20"))
+    droneCommands.append(("back 20"))
 def move_top_left():    
     if facing_north():
         move()
         turn_left()
         move()
-        droneCommands.extend(("foward 20", "left 20"))
+        # droneCommands.extend(("forward 20", "left 20"))
     elif facing_east():
         turn_left()
         move()
         turn_left()
         move()   
-        droneCommands.extend(("left 20", "backward 20"))
+        # droneCommands.extend(("left 20", "back 20"))
     elif facing_south():
         turn_back()
         move()
         turn_left()
         move()
-        droneCommands.extend(("backward x", "right x"))
+        # droneCommands.extend(("back x", "right x"))
     elif facing_west():
         turn_right()
         move()
         turn_left()
         move()
-        droneCommands.extend(("right 20", "forward 20"))
+        # droneCommands.extend(("right 20", "forward 20"))
+    droneCommands.extend(("left 20", "back 20"))
 def move_top():   
     if facing_north():
         move()
-        droneCommands.append(("foward 20"))
+        # droneCommands.append(("forward 20"))
     elif facing_east():
         turn_left()
         move()    
-        droneCommands.append(("left 20"))
+        # droneCommands.append(("left 20"))
     elif facing_south():
         turn_back()
         move()
-        droneCommands.append(("backward 20"))
+        # droneCommands.append(("back 20"))
     elif facing_west():
         turn_right()
         move()
-        droneCommands.append(("right 20"))
+        # droneCommands.append(("right 20"))
+    droneCommands.append(("left 20"))
 
 def getClose(targets, curlo): #returns the closest target node
     nextlist={}
@@ -278,56 +288,56 @@ def mission(routeRdy):      #reads each coorinates from the map provided by main
         if togo == (0,1):   #determines which way to go based on togo value (x,y)
             move_top()
             if beepers_present():
-                droneCommands.append("delay 10")
+                droneCommands.append("delay 5")
                 paint_corner(GREEN)
             else:
                 paint_corner(RED)
         if togo == (1,0):
             move_right()
             if beepers_present():
-                droneCommands.append("delay 10")
+                droneCommands.append("delay 5")
                 paint_corner(GREEN)
             else:
                 paint_corner(RED)
         if togo == (1,1):
             move_top_right()
             if beepers_present():
-                droneCommands.append("delay 10")
+                droneCommands.append("delay 5")
                 paint_corner(GREEN)
             else:
                 paint_corner(RED)
         if togo == (0,-1):
             move_bot()
             if beepers_present():
-                droneCommands.append("delay 10")
+                droneCommands.append("delay 5")
                 paint_corner(GREEN)
             else:
                 paint_corner(RED)
         if togo == (-1,0):
             move_left()
             if beepers_present():
-                droneCommands.append("delay 10")
+                droneCommands.append("delay 5")
                 paint_corner(GREEN)
             else:
                 paint_corner(RED)
         if togo == (-1,-1):
             move_bot_left()
             if beepers_present():
-                droneCommands.append("delay 10")
+                droneCommands.append("delay 5")
                 paint_corner(GREEN)
             else:
                 paint_corner(RED)
         if togo == (-1,1):
             move_top_left()
             if beepers_present():
-                droneCommands.append("delay 10")
+                droneCommands.append("delay 5")
                 paint_corner(GREEN)
             else:
                 paint_corner(RED)
         if togo == (1,-1):
             move_bot_right()
             if beepers_present():
-                droneCommands.append("delay 10")
+                droneCommands.append("delay 5")
                 paint_corner(GREEN)
             else:
                 paint_corner(RED)
@@ -405,19 +415,19 @@ def main():     #main function, maps out a route for drone to start mission
     
     now = datetime.now()
     curTime = now.strftime("%H%M%S")
-    with open(f"C:/Users/Micky/Desktop/Command.txt", "w") as f: #writes tello command file with time stamp. command.txt official file name
+    with open(f"./Command.txt", "w") as f: #writes tello command file with time stamp. command.txt official file name
         f.write('command')
         f.write('\n')
-        f.write('delay 2')
+        f.write('delay 1')
         f.write('\n')
         f.write('takeoff')
         f.write('\n')
-        f.write('delay 2')
+        f.write('delay 1')
         f.write('\n')
         for line in droneCommands:
             f.write(line)
             f.write('\n')
-            f.write('delay 2') #delay used to give cpu time to send and receive data
+            f.write('delay 1') #delay used to give cpu time to send and receive data
             f.write('\n')
         f.write('land')
     

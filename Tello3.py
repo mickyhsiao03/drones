@@ -12,7 +12,7 @@ import time
 
 
 host = ''
-port = 9000
+port = 8889
 locaddr = (host,port) 
 
 
@@ -48,7 +48,7 @@ recvThread.start()
 while True: 
 
     try:
-        msg = input("");
+        msg = input("")
 
         if not msg:
             break  
