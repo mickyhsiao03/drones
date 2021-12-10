@@ -1,5 +1,8 @@
 This is Team Bupkis' Final Project
 
+First, the included karel_program.py should be used to replace the existing file of the same name in the python library. 
+Using a virtual environement is recommended.
+
 The proper order to execute the files is to run main.py, which will open StanfordKarel. 
 The included 7x7 or 40x40 maps are the ones we tested Karel on in class.
 
