@@ -1,0 +1,12 @@
+This is Team Bupkis' Final Project
+
+The proper order to execute the files is to run main.py, which will open StanfordKarel. 
+The included 7x7 or 40x40 maps are the ones we tested Karel on in class.
+
+Following this, the Command.txt file will be created.
+
+Connect your laptop to the tello drone's network before the following.
+The command "py app.py -f Command.txt" will pipe the commands from the txt file to the drone.
+
+That same command but with the testflight.txt file will make the drone fly in a small square.
+Helpful to troubleshoot sources of drifting.
